@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <head>
+    <title>Tetris</title>
+  </head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Portfolio.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<body>
+  <style type="text/css">
+  .card p {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+  }
+  .col-md-4 .btn {
+    margin-top: 10px;
+    padding: 30px;
+    font-size: 20px;
+  }
+  </style>
+  <div class="container" style="max-width: 440px;">
+    <div class="row">
+      <div class="col-md-8">    
+        <div style="background:#bfe7f2;width:102%">
+          <canvas id="tetris"></canvas>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="border-radius: 9px; border:1px solid #ccc;padding: 26px 5px;">
+          <p>Score: <span id="score">0</span></p>
+          <p>Level: <span id="level">1</span></p>
+        </div>
+        <button id="btnRotate" class="btn btn-primary">Rotar</button>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel"></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:document.getElementById('myModal').className='modal'">Close</button>
+        <button type="button" id="modalBtn" class="btn btn-primary"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="ui.js"></script>
+<script type="text/javascript" src="tetris2.js"></script>
+</body>
+</html>
